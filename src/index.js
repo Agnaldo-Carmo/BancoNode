@@ -33,7 +33,7 @@ function main() {
     console.log("");
 
     let conta = cadastro(nome);
-    exibir(conta,nome);
+    exibir(conta);
 }
 
 //Chama a função main

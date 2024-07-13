@@ -1,13 +1,13 @@
 const prompt = require("prompt-sync")();
 
 //Funcao que prepara a tela para melhor exibição dos resultados
-function exibir(conta,nome) {
+function exibir(conta) {
     let i = 0;
 
     do {
         console.log("---------------------------------------------------------------");
         console.log("");
-        console.log(`Olá ${nome} Em que podemos ajudar? Digite:` + "\n\n" + "1 para depositar" + "\n\n" + "2 para sacar " + "\n\n" +
+        console.log(`Olá ${conta.titular} Em que podemos ajudar? Digite:` + "\n\n" + "1 para depositar" + "\n\n" + "2 para sacar " + "\n\n" +
             "3 para ver o extrato" + "\n\n" + "Qualquer tecla para encerrar");
 
         console.log("");

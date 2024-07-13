@@ -11,7 +11,7 @@ class Conta {
     validaDeposito(valor) {
 
         if (isNaN(valor) || valor <= 0) {
-            valor = parseFloat(prompt("Valor Invalido, digite um valor numerico e acima de zero: "));
+            valor = parseFloat(prompt("Valor Invalido, digite um valor numerico e acima de zero (ex:1.50): "));
             console.log("");
             this.validaDeposito(valor);
 
@@ -25,7 +25,7 @@ class Conta {
     validaSaque(valor) {
 
         if (isNaN(valor) || valor <= 0) {
-            valor = parseFloat(prompt("Valor Invalido, digite um valor numerico e acima de zero: "));
+            valor = parseFloat(prompt("Valor Invalido, digite um valor numerico e acima de zero (ex:1.50): "));
             console.log("");
             this.validaSaque(valor);
 
