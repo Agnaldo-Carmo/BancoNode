@@ -11,6 +11,7 @@ function cadastro(nome) {
 
     let conta;
 
+    //Decide que tipo de conta sera criada 
     if (tipo == "1") {
         conta = new ContaCorrente(nome, parseFloat(0));
 
@@ -18,6 +19,8 @@ function cadastro(nome) {
         conta = new ContaPoupanca(nome, parseFloat(0));
 
     } else {
+
+        //Se a opção for invalida chama a função novamente
         console.log("Você escolheu uma opção invalida!");
         console.log("");
         conta = cadastro(nome);

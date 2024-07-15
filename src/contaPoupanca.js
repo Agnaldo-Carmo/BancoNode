@@ -9,7 +9,7 @@ class ContaPoupanca extends Conta{
     }
 
     //Aplica rendimento calculando o valor em porcentagem
-    aplicarJuros(rendimento){
+    aplicarRendimento(rendimento){
      
         this.saldo = this.saldo + (rendimento/100 * this.saldo);
     }
